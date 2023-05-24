@@ -1,0 +1,78 @@
+body{
+    background-color: honeydew;
+}
+.inputsModal{
+    margin: auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-header{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.modal-footer{
+    width: 80%;
+    margin: auto;
+}
+
+.table{
+    text-align: center;
+    width: 80%; 
+    margin: auto;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: rgb(74, 104, 114);
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitulo button{
+    padding: 10px 30px;
+    font-weight: bolder;
+}
+
+.btn-total{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.btn-total button{
+    padding: 10px 30px;
+    font-weight: bolder;
+    margin-bottom: 14px;
+}
+
+.btn-total input{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 27px;
+    width: 200px;
+    margin-left: 15px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; 
+    background-color:rgb(74, 104, 114) ;
+}
+
+

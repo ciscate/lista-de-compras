@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Compras</title>
+</head>
+<body>
+    <h1 class="titulo">LISTA DE COMPRAS</h1>
+
+    <div class="subtitulo">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventanaModal">
+            Agregar Producto
+        </button>
+    </div>
+    
+
+
+    
+    <table class="table">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col" id="columnaSubtotal">Subtotal</th>
+            <th scope="col">X</th>
+          </tr>
+        </thead>
+        <tbody class="listaProductos" id="listaProductos">
+          
+        </tbody>
+      </table>
+
+
+
+     <div class="btn-total">
+        <button class="btn btn-primary" onclick="sumaTotal()">Calcular Total: </button>
+      <input readonly id="inputTotal" type="text">
+     </div>
+      
+
+     
+
+     
+
+
+      
+    <div class="modal fade" id="ventanaModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="tituloVentana">Introduzca los datos del producto</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="alert alert-primary">
+                                <input class="inputsModal" placeholder="Nombre"  id="nombreProducto" type="text" required>
+                                <input class="inputsModal" placeholder="Precio" id="precioProducto" type="number" required>
+                                <input class="inputsModal" placeholder="Cantidad" id="cantidadProducto" type="number" required>
+                                <select name="categoria" id="categoriaProducto" required>
+                                    <option value="" selected>Categorias</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                    <option value="C3">C3</option>
+                                    <option value="C4">C4</option>
+                                    <option value="C5">C5</option>
+                                    <option value="C6">C6</option>
+                                    <option value="C7">C7</option>
+                                    <option value="C8">C8</option>
+                                    <option value="C9">C9</option>
+                                    <option value="C10">C10</option>
+                                </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <form>
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">
+                                Cerrar
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="agregarProducto()">
+                                Aceptar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </div>  
+    
+    <footer>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="agregarProducto.js"></script>
+</body>
+</html>
