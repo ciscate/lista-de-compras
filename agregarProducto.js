@@ -24,7 +24,7 @@ function agregarProducto(){
     //CREO LAS COLUMNAS
     let tdId = document.createElement("td")
     tdId.innerHTML = contador
-    tr.appendChild(tdId)
+    
 
     let tdCategoria = document.createElement("td")
     tdCategoria.innerHTML = categoria
